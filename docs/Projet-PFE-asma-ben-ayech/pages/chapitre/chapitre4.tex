@@ -1,0 +1,149 @@
+\addcontentsline{toc}{chapter}{Chapitre 4 : Introduction générale} 
+\section{Introduction}
+Nous allons, dans ce chapitre, analyser et détailler le Sprint de gestions des exercies ainsi que les différents stories. 
+En premier lieu, nous présentons l’organisation de ce Sprint et son Backlog que nous avons pu dégager précédemment.
+Ensuite, nous allons présenter la phase d’analyse et la solution conceptuelle en exposant les différents diagrammes qui décrivent l’interaction entre le système et l’utilisateur afin d’atteindre le résultat désiré
+
+
+
+\section{Backlog du sprint}
+\begin{table*}[h]
+    \begin{center} 
+    \begin{tabular}{|p{2.5cm}|p{6cm}|p{2.8cm}|p{1.8cm}|p{1.8cm}|} \hline 
+Module &  User Stories &  Tache &  Complexité & Estimation \\ \hline
+
+Gestion des exercies & En tant que visiteur je veux consulter les exercies & Dévelopement du backend & \centering L & 1 jour  \\  \hline
+& En tant que étudiant je veux chercher un exercises & Dévélopement backend & \centering L & 1 jour  \\ 
+& En tant que étudiant je veux m’inscrire à un series des exercies & Developement du backend & &\\ \hline
+& En tant que étudiant je veux consulter le progrès des exercies & Developement du backend & & \\ \hline
+& En tant que professeur je veux déposer un ou des exercies  & Developement du backend & & \\ \hline
+&  En tant que professeur je veux supprimer un exercies & Developement du backend & & \\ \hline
+& En tant que administrateur je veux consulter un exercies & Developement du backend & & \\ \hline
+&  En tant que administrateur je veux déposer un exercies & Developement du backend & & \\ \hline
+& En tant que administrateur je veux supprimer un exercies & Developement du backend & & \\ \hline
+\end{tabular}
+\end{center}
+\center
+\caption { Backlog sprint 4}
+\label{tab:bert_res}
+\end{table*} 
+
+
+
+
+
+
+
+\section{Analyse fonctionnelle}
+Dans cette partie on va présenter les besoins fonctionnelle du deuxieme sprint "gestion des exercies" qui se déroule entre ces acteurs sure cinques modules principalent 
+\begin{itemize}
+    \item Admin
+    \item  Visiteur
+    \item  Etudiant 
+    \item  Professeur
+\end{itemize}
+\begin{itemize}
+
+
+
+\vspace{15cm}
+
+\item \textbf{ Consulter les exercies }  : l'utilisateur peut voir les exercices sur le site Web mais ne peut pas interagir. 
+\item \textbf{ Inscrire à une serie des exercies } : l'utilisateur peut accéder à une série d'exercices réalisés par un professeur par une inscription.
+\item \textbf{ Supprimer un exercies ou une serie } : l'utilisateur peut supprimer un ensemble d'exercices ou un exercice, cette tâche est réservée à l'administrateur et le professeur 
+\item \textbf{ Consulter le progrée d'une serie / exercies }  : un utilisateur peut vérifier la progression de chaque série d'exercices ou d'un seul, cette tâche est destinée au professeur et à l'administrateur 
+\item \textbf{ Déposer un ou des exercies }  : un utilisateur peut déposer un ensemble d'exercices sous son nom, cette tâche est réservée à l'administrateur et au professeur
+
+
+ 
+\end{itemize}
+\section{diagramme de cas d'utilisation détaillé}
+Cette figure montre le diagramme des cas d'utilisation du deuxiéme sprint :
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{} 
+    \caption{Diagramme de cas d'utilisation pour le sprint 2}
+    \label{fig:enter-label}
+\end{figure}
+
+
+
+
+\subsection{Déscription textuelle}  
+
+\begin{table*}[!h]
+    \begin{center} 
+    \begin{tabular}{|p{4cm}|p{9cm}|}  \hline 
+
+Cas d'utilisation & Gestion des exercies  \\ \hline
+Acteur & Etudiant,Professeur,Admin , visiteur \\ \hline
+Précondition & L'utilisateur doit être présenté à l'interface. \\
+		   &Le document demandé doit être enregistré dans la base de données      \\ \hline
+Post condition & Le document sélectionné doit être affiché sans aucune erreur et noté. 
+
+\\ \hline
+       
+Scénario nominale & L'utilisateur peut consulter les exercices sans/sans authentification \\  
+& L'utilisateur peut consulter les exercices sans/sans authentification \\ 
+& L'utilisateur peut s'abonner à une série d'exercices \\ 
+& L'utilisateur peut déposer une série d'exercices \\ 
+& L'utilisateur peut supprimer une série d'exercices \\ 
+& L'utilisateur peut consulter la progression des exercices et de leurs utilisateurs\\ 
+                       \\ \hline
+                       
+Scénario alternatif&      
+       Le système renvoie un message d’erreur et
+signale à l’utilisateur de recommencer en cas d'erreur de synchronisation\\ 
+& 
+\\ \hline
+
+  \end{tabular}
+  \end{center}
+  \caption{ Déroulement de cas d'utilisation}
+\label{tab:bert_res}
+\end{table*}
+\section{Diagramme de classe }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Réalisation}
+ce'tte figure montre l'interface du liste des exercices affiché pour l'utilisateur de la  plateforme 
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\linewidth]{}
+    \caption{Interface de la liste des exercices }
+    \label{fig:enter-label}
+\end{figure}
+La figure suivante montre l'interface du forume pour la creation du support de cours  pour le professeur 
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\linewidth]{}
+    \caption{Interface creation d'un support de cours }
+    \label{fig:enter-label}
+\end{figure}
+
+Cette figure montre  l'interface pour l'utilisateur pour qu'il puisse s'inscrire à un support de cours .
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\linewidth]{}
+    \caption{Caption}
+    \label{fig:enter-label}
+\end{figure}
+
+\section{Conclution}
+Notre deuxième Sprint nous a permis de collecter toutes les informations nécessaires pour la prochaine étape du travail.
+La prochaine étape consistera à aborder le dernier sprint, qui constitue à une partie secondaire du projet : la partie de gestion des avis .
