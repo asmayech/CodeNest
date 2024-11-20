@@ -1,0 +1,32 @@
+
+:root {
+  --lvl1-darkcolor: #232a3cb8;
+  --lvl2-darkcolor: #191e2b;
+  --lvl3-darkcolor: #131823;
+  --lvl4-darkcolor: #2b2f3958;
+  --bordercolor: #2f3b4b;
+  --maincolor: #3055fe;
+  --hover-maincolor: #1039f3;
+  background-color: var(--chakra-colors-chakra-body-bg);
+  color: var(--chakra-colors-chakra-body-text);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a {
+  font-weight: 500;
+  text-decoration: inherit;
+}
+
+
+a.active {
+  color: #f5f0ff;
+  border-radius: 7px;
+}
+
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
